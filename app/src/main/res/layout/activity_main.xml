@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="#0E1C6B"
+    tools:context= ".MainActivity">
+
+    <TextView
+        android:id="@+id/Question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="Qui est le premier recteur de l'UPNip"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/Reponse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="false"
+        android:text="Le premier recteur de l'UPNip est Le Docteur Yves VOLTAIRE"
+        android:gravity="center"
+        android:layout_below="@+id/Question"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        android:textColor="@color/white"/>
+</RelativeLayout>
